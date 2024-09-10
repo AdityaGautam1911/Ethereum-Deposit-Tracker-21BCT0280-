@@ -49,3 +49,13 @@
 Telegram Group Link : https://t.me/+l_x1Ftfa7GQxODll
 
 ![image](https://github.com/user-attachments/assets/861294d7-6f29-4acb-97a3-0fee94ffd8d7)
+
+## Alchemy Logs
+<br>
+API logs
+![image](https://github.com/user-attachments/assets/a5011f18-70bc-488e-be22-357d8fc9ba19)
+<br>
+Alchemy Dashboard
+<br>
+![image](https://github.com/user-attachments/assets/8a48cb34-325c-4901-960b-190a401c07c2)
+
