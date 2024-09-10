@@ -8,6 +8,7 @@ const settings = {
 
 const alchemy = new Alchemy(settings);
 
+//asynchronous function that fetches the latest block number
 const getBlockNumber = async () => {
   try {
     const blockNumber = await alchemy.core.getBlockNumber();
@@ -18,6 +19,7 @@ const getBlockNumber = async () => {
   }
 };
 
+//asynchronous function that retrieves a specific block by its number, along with its transactions
 const getBlock = async (blockNumber) => {
   try {
     const block = await alchemy.core.getBlockWithTransactions(blockNumber);
@@ -28,6 +30,7 @@ const getBlock = async (blockNumber) => {
   }
 };
 
+//retrieves the receipt of a specific transaction by its hash (ransaction status, gas used, and logs)
 const getTransactionReceipt = async (transactionHash) => {
   try {
     const receipt = await alchemy.core.getTransactionReceipt(transactionHash);

@@ -1,5 +1,5 @@
 const { getBlockNumber, getBlock, getTransactionReceipt } = require("./rpc");
-const winston = require("winston");
+const winston = require("winston"); //handle logging of errors (errors.log)
 const config = require("../config/config.json");
 const alert = require("./alerts");
 
@@ -38,7 +38,7 @@ async function monitorDeposits() {
               blockNumber: block.number,
               blockTimestamp: block.timestamp,
               hash: tx.hash,
-              pubkey: log.topics[1], // assuming pubkey is in topics
+              pubkey: log.topics[1],
             };
             console.log("New Deposit:", deposit);
             logger.info("Deposit recorded:", deposit);
