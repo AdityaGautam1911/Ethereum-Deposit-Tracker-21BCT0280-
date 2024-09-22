@@ -30,7 +30,7 @@ const getBlock = async (blockNumber) => {
   }
 };
 
-//retrieves the receipt of a specific transaction by its hash (ransaction status, gas used, and logs)
+//retrieves the details of a specific transaction by its hash (transaction status, gas used, and logs)
 const getTransactionReceipt = async (transactionHash) => {
   try {
     const receipt = await alchemy.core.getTransactionReceipt(transactionHash);
